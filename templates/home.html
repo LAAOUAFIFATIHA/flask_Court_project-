@@ -1,0 +1,59 @@
+{% extends 'layout.html'%}
+
+{% block content %}
+<style>
+    .Center{
+    padding: 20px  80PX;
+    margin: 20px;
+}
+
+
+.Center input{
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+}
+
+.Center input[type="submit"]{
+    border-radius: 8px;
+    background-color: brown;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+body{
+    
+    padding: 80px;
+    background-color: rgb(210, 162, 104);
+    
+}
+
+.paddingOfbody{
+    padding: 0px  500PX  10px 500px;
+}
+</style>
+<body>
+    
+<main class="paddingOfbody">
+<h1 style="padding: 10px  10PX  0px 200px;font-family: 'Courier New', Courier, monospace;font-size: 50px;">  login   </h1>
+<!-- create form to sign in -->
+
+<div class="Center">
+
+    <form action="/" method="post">
+        <input type="text" placeholder="email" name="email" id="email" required class="Center input"> <br>
+        <input type="password" placeholder="password" name="password" id="password" required class="Center input"><br>
+        <input type="submit" value="login"  class="Center input"><br>
+    </form> 
+    <br>
+{% if email !=null %}
+    your email : {{email}} <br> <br>
+    your password : {{password}}
+{% endif  %}
+
+</div>
+
+</main>
+</body> 
+
+
+{% endblock content %}

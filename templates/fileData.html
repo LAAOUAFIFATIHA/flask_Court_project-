@@ -1,0 +1,91 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+<style>
+
+/* Basic table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Adding padding and a border to each cell */
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+/* Varying cell sizes */
+td:nth-child(1) {
+    width: 30%;
+}
+td:nth-child(2) {
+    width: 50%;
+}
+td:nth-child(3) {
+    width: 20%;
+}
+
+/* Styling the header */
+th {
+    background-color: #f4f4f4;
+    text-align: left;
+}
+
+/* Hover effect on table rows */
+tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+/* Alternating row colors for better readability */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+</style>
+
+<h1> data base </h1>
+
+
+
+<!-- search about file  -->
+
+<table border="1">
+<tr>
+         <td>الرقم الترتيب</td>
+         <td> رقم التقرير الإخباري </td>
+         <td> الضابطة القضائية  </td>
+         <td> تاريخ إنجاز التقرير  </td>
+         <td> الهوبة الكاملة  </td>
+         <td>الطبيب</td>
+         <td>أمر النيابة </td>
+         <td>     النائب</td>
+         <td>رقم الملف     </td>
+</tr>
+{% for item in res1 %}
+<tr>
+         <td> {{ item.NFile }} </td>
+         <td>{{ item.Nrapport }}</td>
+         <td>{{ item.officer }}</td>
+         <td>{{ item.dateOfDoing }}</td>
+         <td>{{ item.Identity }}</td>
+         <td>{{ item.doctor }}</td>
+         <td>{{ item.OrderProsecution }}</td>
+         <td>{{ item.deputy }}</td>
+         <td>{{ item.id }}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+
+
+<!-- modify file  -->
+ 
+
+
+
+
+{% endblock content %}

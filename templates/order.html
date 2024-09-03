@@ -1,0 +1,93 @@
+
+
+{% extends 'layout.html' %}
+{% block content %}
+<style>
+body{
+    font-size: large;
+    font-size:25px;
+    line-height: 2;
+    padding:  10px 150px 10px 150px;
+    
+}
+
+.Global{
+    display: flex; 
+    padding: 30px 30px 200px 30px  ;
+    border: solid;
+}
+.div1{
+    flex: 4;
+}
+.div2{
+    flex: 2;
+}
+
+</style>
+
+<body dir="rtl">
+    <div class="Global">
+        <div class="div2">
+                    <h3 style="padding: 20px;">       المملكة المغربية <br>
+                        محكمة الاستئناف بآسفي<br>
+                        الحكمة الابتدائية بالصويرة<br>
+                        النيابة العامة</h3>
+                        <hr style="font-size: 40px;color: aqua;">
+                        <br><br><br><br>
+            {{OrderProsecution}}
+            بتاريخ {{dateOfDoing}}
+            عدد:
+            {{id}}
+            <br><br> <br> <br> <br>
+        
+
+           <br> ملاحظة : تؤدى الصوائر
+(الاجور)  بوسطة قوائم بيانية<br>
+تحرر في ثلاثة نظائر طبقا<br>
+للنمودج المعد لهذه الغاية . <br>
+الفصول 34,35,36,37 عن<br>
+الظهير 31 دجنبر 1986
+        
+        </div>
+
+        <div class="div1">
+    
+    <img src="static/image/image.png" alt=" logo" style="padding: 0px 200px 0px 200px;">
+     <h2 style="padding:  0px 200px 0px 200px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">امر باجراء تشريح طبي</h2>
+  <h3 style="padding:  0px 200px 0px 200px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">المادة 77 من قانون المسطرة الجنائية</h3>
+
+
+نحن وكيل الملك لدى المحكمة الابتدائية بالصويرة <br>
+بناء على التقرير الاخباري المنجز  <br>
+عدد
+{{Nrapport}} <br>
+بتاريخ {{dateOfDoing}} <br>
+تنتدب : الطبيب {{doctor}}br
+
+وذلك من أجل اجراء تشريح طبي على جثة الهالك (5) المسمى قيد حياته (1) <br>
+ <strong> {{victime}}</strong><br>
+
+<strong>مع :</strong> <br>
+- بيان أسباب الوفاة <br>
+- بيان طبيعة الجروح والاصابات<br>
+علاقتها باحدات الوفاة<br>
+- بيان الوسائل التي استعملت في ذلك<br>
+وضع تقرير مفصل عن كل ذلك وتوجيهه إلينا في أقرب الآجال<br> <br>
+<strong>ملاحظة : <br>
+    تسلم الجثة لذويها بعد اجراء عملية تشريح طبي قصد الدفن. <br>
+    <samp style="padding: 30px;">
+        حرر بالصويرة بتاريخ :
+        22/10/2021 
+    </samp>
+ 
+
+
+</strong> <br>
+<strong style="padding: 30px;">وكيل الملك</strong>
+
+
+</div>
+
+</div>
+</body>
+{% endblock content %}
