@@ -4,6 +4,9 @@
 # about project 
 the project aims to build an application about the court functionality 
 
+# project objectives 
+-  
+
 # get start 
 
 # find me around the world
