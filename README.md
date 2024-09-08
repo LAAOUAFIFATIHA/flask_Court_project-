@@ -9,5 +9,6 @@ the project aims to build an application about the court functionality
 -  organaze the information 
 
 # get start 
+>>> pip 
 
 # find me around the world
