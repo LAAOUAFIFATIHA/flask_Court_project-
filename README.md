@@ -9,7 +9,7 @@ the project aims to build an application about the court functionality
 -  organaze the information 
 
 # get start 
->>> pip install flask
+>>> pip install flask <br>
 >>> pip install jinja2
 
 # find me around the world
