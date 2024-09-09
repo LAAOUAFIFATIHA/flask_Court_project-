@@ -4,7 +4,7 @@
 # about project 
 the project aims to build an application about the court functionality 
 
-# project 
+# project objectives 
 -  reduce the papers
 -  organaze the information 
 
